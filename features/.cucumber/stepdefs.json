@@ -2,7 +2,7 @@
   {
     "source": "^I am on the (.+) Home Page$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:1",
+    "file_colon_line": "features/step_definitions/login_steps.rb:1",
     "steps": [
       {
         "name": "I am on the <wordpress> Home Page",
@@ -16,33 +16,42 @@
     ]
   },
   {
-    "source": "^I search for a? ?\"([^\"]*)\"$",
+    "source": "^I enter (.+) and (.+)$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:6",
+    "file_colon_line": "features/step_definitions/login_steps.rb:6",
     "steps": [
-
+      {
+        "name": "I enter <username> and <password>",
+        "args": [
+          {
+            "offset": 8,
+            "val": "<username>"
+          },
+          {
+            "offset": 23,
+            "val": "<password>"
+          }
+        ]
+      }
     ]
   },
   {
-    "source": "^I search for a?n? ?([^\"].+[^\"])$",
+    "source": "^I should see a Sign out menu item$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:12",
+    "file_colon_line": "features/step_definitions/login_steps.rb:12",
     "steps": [
+      {
+        "name": "I should see a Sign out menu item",
+        "args": [
 
-    ]
-  },
-  {
-    "source": "^I should see at least ([\\d,]+) results$",
-    "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:19",
-    "steps": [
-
+        ]
+      }
     ]
   },
   {
     "source": "^I should see at most ([\\d,]+) results$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:25",
+    "file_colon_line": "features/step_definitions/login_steps.rb:19",
     "steps": [
 
     ]
@@ -50,7 +59,7 @@
   {
     "source": "^I convert (.+)$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:31",
+    "file_colon_line": "features/step_definitions/login_steps.rb:25",
     "steps": [
 
     ]
@@ -58,7 +67,7 @@
   {
     "source": "^I should see the conversion result \"([^\"]*)\"$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:37",
+    "file_colon_line": "features/step_definitions/login_steps.rb:31",
     "steps": [
 
     ]

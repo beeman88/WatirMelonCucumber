@@ -17,4 +17,4 @@ Feature: WordPress Login
     Then I should see an error message
     Scenarios:
       | wordpress | username  | password  |
-      | wordpress | bbbelyk   | invalid   |
+      | wordpress | invalid   | invalid   |

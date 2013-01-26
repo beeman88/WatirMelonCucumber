@@ -3,22 +3,16 @@ Given /^I am on the (.+) Home Page$/ do |site|
   visit @site, :home_page
 end
 
-When /^I search for a? ?"([^"]*)"$/ do |term|
+When /^I enter (.+) and (.+)$/ do |username, password|
   on @site, :home_page do |page|
-    page.search_for term
+    page.login username, password
   end
 end
 
-When /^I search for a?n? ?([^"].+[^"])$/ do |term|
-  term = Common.get_search_term_data term
-  on @site, :home_page do |page|
-    page.search_for term
-  end
-end
-
-Then /^I should see at least ([\d,]+) results$/ do |exp_num_results|
-  on @site, :results_page do |page|
-    page.number_search_results.should >= exp_num_results.gsub(",","").to_i
+Then /^I should see a Sign out menu item$/ do
+  on @site, :landing_page do |page|
+    page.logged_in?.should == true
+    # page.number_search_results.should >= exp_num_results.gsub(",","").to_i
   end
 end
 
