@@ -8,13 +8,13 @@ Feature: WordPress Login
     When I enter <username> and <password>
     Then I should see a Sign out menu item
     Scenarios:
-      | wordpress          | username  | password                  |
-      | www.wordpress.com  | bbbelyk   | )#!]w^xnR\U9C)%oU?df|LaX^ |
+      | wordpress | username  | password                  |
+      | wordpress | bbbelyk   | uTk9VGenndmrCU^Nar&YU@v9c |
  
   Scenario Outline: Login fails
     Given I am on the <wordpress> Home Page
     When I enter <username> and <password>
     Then I should see an error message
     Scenarios:
-      | wordpress          | username  | password  |
-      | www.wordpress.com  | bbbelyk   | invalid   |
+      | wordpress | username  | password  |
+      | wordpress | bbbelyk   | invalid   |
