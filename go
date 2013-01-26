@@ -5,4 +5,5 @@ cd .
 set -e
 gem install bundler --no-rdoc --no-ri
 bundle install
+bundle update selenium-webdriver
 cucumber
