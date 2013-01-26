@@ -49,27 +49,16 @@
     ]
   },
   {
-    "source": "^I should see at most ([\\d,]+) results$",
+    "source": "^I should see an error message$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/login_steps.rb:19",
+    "file_colon_line": "features/step_definitions/login_steps.rb:18",
     "steps": [
+      {
+        "name": "I should see an error message",
+        "args": [
 
-    ]
-  },
-  {
-    "source": "^I convert (.+)$",
-    "flags": "",
-    "file_colon_line": "features/step_definitions/login_steps.rb:25",
-    "steps": [
-
-    ]
-  },
-  {
-    "source": "^I should see the conversion result \"([^\"]*)\"$",
-    "flags": "",
-    "file_colon_line": "features/step_definitions/login_steps.rb:31",
-    "steps": [
-
+        ]
+      }
     ]
   }
 ]

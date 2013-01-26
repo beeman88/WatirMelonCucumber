@@ -18,3 +18,4 @@ Feature: WordPress Login
     Scenarios:
       | wordpress | username  | password  |
       | wordpress | invalid   | invalid   |
+
