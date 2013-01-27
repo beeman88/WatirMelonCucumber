@@ -1,8 +1,9 @@
+language: ruby
 rvm:
-  - 1.9.2
+  - 1.9.3
 notifications:
   recipients:
-    - alister.scott@gmail.com
+    - bbbelyk@gmail.com
 before_script:
   - ./travis.sh
 env:
